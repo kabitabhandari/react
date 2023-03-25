@@ -2,10 +2,10 @@ import './App.css';
 
 import { useState } from 'react';
 
-export default function App() {
+export default function ComponentShowingUseState() {
   return (
       <div>
-        <h1>Counters that update separately</h1>
+        <h1>ComponentShowingUseState: Counters that update separately</h1>
         <MyButton />
         <MyButton />
       </div>

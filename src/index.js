@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import ComponentShowingUseState from './ComponentShowingUseState';
 import reportWebVitals from './reportWebVitals';
+import ComponentRenderingList from "./ComponentRenderingList";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ComponentShowingUseState />
+    <ComponentRenderingList></ComponentRenderingList>
   </React.StrictMode>
 );
 
