@@ -4,11 +4,13 @@ import './index.css';
 import ComponentShowingUseState from './ComponentShowingUseState';
 import reportWebVitals from './reportWebVitals';
 import ComponentRenderingList from "./ComponentRenderingList";
+import ComponentRenderingButtonEvent from "./ComponentRenderingButtonEvent";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ComponentShowingUseState />
+    <ComponentRenderingButtonEvent />
     <ComponentRenderingList></ComponentRenderingList>
   </React.StrictMode>
 );
