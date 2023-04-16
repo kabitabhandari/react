@@ -7,7 +7,7 @@ export default function ComponentShowingUseState() {
       <div>
         <h1>ComponentShowingUseState: Counters that update separately</h1>
         <MyButton />
-        <MyButton />
+        <MyButtonManual />
       </div>
   );
 }
@@ -24,4 +24,21 @@ function MyButton() {
         Clicked {count} times
       </button>
   );
+}
+
+
+// Trying to change state without using use state and not successful. Because this way the content is not re rendered.
+function MyButtonManual() {
+    let manualCount = 0;
+
+    function handleClickManual() {
+        manualCount = manualCount +1;
+        console.log("manually clicked:",  {manualCount});
+    }
+
+    return (
+        <button onClick={handleClickManual}>
+            Manually Clicked {manualCount} times
+        </button>
+    );
 }
