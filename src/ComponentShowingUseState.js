@@ -13,15 +13,15 @@ export default function ComponentShowingUseState() {
 }
 
 function MyButton() {
-  const [count, setCount] = useState(0);
+  const [ImCounting, setImCounting] = useState(0);
 
   function handleClick() {
-    setCount(count + 1);
+      setImCounting(ImCounting + 1);
   }
 
   return (
       <button onClick={handleClick}>
-        Clicked {count} times
+        Clicked {ImCounting} times
       </button>
   );
 }
