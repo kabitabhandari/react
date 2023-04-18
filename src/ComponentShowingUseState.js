@@ -13,7 +13,9 @@ export default function ComponentShowingUseState() {
 }
 
 function MyButton() {
-  const [ImCounting, setImCounting] = useState(0);
+
+    //Array Destructuring
+  const [ImCounting, setImCounting] = useState(0); // [] indicates that rhs is an array
 
   function handleClick() {
       setImCounting(ImCounting + 1);
@@ -42,3 +44,20 @@ function MyButtonManual() {
         </button>
     );
 }
+
+
+
+//Object Destructuring
+const myObject = new Object();
+myObject.name = "Roman Sky";
+myObject.gender = "male";
+
+const o1 = myObject.name;
+const o2 = myObject.gender;
+
+console.log(o1, o2);
+
+const{name: n1 , gender:g1} = myObject;  // {} indicates that rhs is an object
+console.log(n1, g1);
+
+
